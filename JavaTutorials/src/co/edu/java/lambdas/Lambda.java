@@ -1,6 +1,7 @@
 package co.edu.java.lambdas;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Lambda {
 
@@ -8,7 +9,8 @@ public class Lambda {
 		
 		Arrays.asList( "a", "b", "d" ).forEach( e -> System.out.println( e ) );
 		
-		Arrays.asList( "a", "b", "d" ).forEach( ( String e ) -> System.out.println( e ) );
+		List<String> listString = Arrays.asList( "a", "x", "d" );
+		listString.forEach( ( String e ) -> System.out.println( e ) );
 		
 		Arrays.asList( "a", "b", "d" ).forEach( e -> {
 		    System.out.print( e );
@@ -19,7 +21,8 @@ public class Lambda {
 		Arrays.asList( "a", "b", "d" ).forEach( 
 		    ( String e ) -> System.out.print( e + separator ) );
 		
-		Arrays.asList( "a", "b", "d" ).sort( ( e1, e2 ) -> e1.compareTo( e2 ) );
+		listString.sort( ( e1, e2 ) -> e1.compareTo( e2 ) );
+		listString.forEach( ( String e ) -> System.out.println( e ) );
 		
 		Arrays.asList( "a", "b", "d" ).sort( ( e1, e2 ) -> {
 		    int result = e1.compareTo( e2 );
