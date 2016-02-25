@@ -29,6 +29,23 @@ public class Lambda {
 		    return result;
 		} );
 		
+		carryOutDefault(new Functional() {
+			
+			@Override
+			public void doWork() {
+				System.out.println("Do work in SimpleFun impl...");
+			}
+		});
+		carryOutDefault(() -> System.out.println("JC"));
+		
+	}
+	
+//	public static void carryOutDefault(Functional func){
+//		func.defaultMethod();
+//	}
+	
+	public static void carryOutDefault(Functional func){
+		func.doWork();
 	}
 
 }

@@ -2,5 +2,8 @@ package co.edu.java.lambdas;
 
 @FunctionalInterface
 public interface Functional {
-    void method();
+    public void doWork();
+//    default void defaultMethod() {
+//    	System.out.println("Juan Ramirez");
+//    }
 }
