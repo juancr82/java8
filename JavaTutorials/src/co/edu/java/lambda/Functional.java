@@ -1,4 +1,4 @@
-package co.edu.java.lambdas;
+package co.edu.java.lambda;
 
 @FunctionalInterface
 public interface Functional {
