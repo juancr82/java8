@@ -55,6 +55,7 @@ public class Person {
     		person = new Person();
     		person.setAge(i);
     		person.setName("name " + i);
+    		person.setEmailAddress("email " + i);
     		if((i%2)==0){
     			person.setGender(Sex.FEMALE);
     		}else{
